@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.3.0/browser/pixi.min.js"></script>
+    <script src="components/loader.js"></script>
+    <style>
+        button {
+            position:relative;
+            z-index:100001
+        }
+    </style>
+</head>
+<body style="margin: 0px;">
+    <!-- TODO: Please edit here -->
+    <div style="height:5vh">
+        <button class="btn btn-primary" style="height:5vh" onclick="play(event)">アニメ再生</button>
+        <button class="btn btn-primary" style="height:5vh" onclick="stop(event)">アニメ停止</button>
+        <button class="btn btn-primary" style="height:5vh" onclick="change(event)">一瞬猫化</button> -- アニメ
+    </div>
+    <div style="height:10vh">
+        <button style="height:5vh" onclick="effectFadeOut(event)">フェードアウト</button>
+        <button style="height:5vh" onclick="effectFadeIn(event)">フェードイン</button>
+        <button style="height:5vh" onclick="effectVibe(event)">バイブレーション</button>
+        <button style="height:5vh" onclick="effectFlash(event)">点滅</button>
+        <button style="height:5vh" onclick="effectRotate(event)">回転</button> -- キャラアイコンのエフェクト
+    </div>
+    <div id="game"></div>
+    <script src="../src/js/common/joystick.js"></script>
+    <script src="../src/js/game_sample/main.js"></script>
+</body>
+</html>

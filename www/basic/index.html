@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <style>
+        #scene_selector {
+            width: 100%;
+            height: 5vh;
+        }
+    </style>
+    <script src="components/loader.js"></script>
+    <!-- 画面のサイズを受け取るjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/6.3.0/browser/pixi.min.js"></script>
+</head>
+<body style="margin: 0px;">
+    <select id="scene_selector" onchange="selectScene(event.currentTarget.value)">
+        <option>container</option>
+        <option>Transparent Background</option>
+        <option>Tilting</option>
+        <option>Cache As Bitmap</option>
+        <option>Particle Container</option>
+    </select>
+    <div id = "main" ></div>
+    <script src="../src/js/basic/main.js"></script>
+    <script src="../src/js/basic/container.js"></script>
+    <script src="../src/js/basic/transparent_background.js"></script>
+    <script src="../src/js/basic/tilting.js"></script>
+    <script src="../src/js/basic/cache_as_bitmap.js"></script>
+    <script src="../src/js/basic/particle_container.js"></script>
+    <!-- TODO: Please edit here -->
+</body>
+</html>
